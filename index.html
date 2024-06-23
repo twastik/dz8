@@ -1,0 +1,229 @@
+# dz8
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Diary</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .header .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .header .nav-links li {
+            margin-left: 20px;
+        }
+        .header .nav-links li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .news-section, .rewards-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .news-section h2, .rewards-section h2 {
+            margin-bottom: 10px;
+        }
+        .news-item, .reward-item {
+            margin-bottom: 15px;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .news-item h3, .reward-item h3 {
+            margin-bottom: 5px;
+        }
+        .news-item .date, .reward-item .date {
+            font-size: 12px;
+            color: #6c757d;
+        }
+        .news-item .image, .reward-item .image {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .news-item .image img, .reward-item .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .news-item .text, .reward-item .text {
+            margin-bottom: 10px;
+        }
+        .news-item .count, .reward-item .count {
+            display: flex;
+            align-items: center;
+        }
+        .news-item .count i, .reward-item .count i {
+            margin-right: 5px;
+            color: #28a745;
+        }
+        .news-item .count span, .reward-item .count span {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .load-more {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .load-more a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Student Diary</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Homework</a></li>
+                <li><a href="#" class="settings"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="news-section">
+                        <h2>News</h2>
+                        <div class="news-item">
+                            <h3 class="news-item-title">Weekends</h3>
+                            <div class="date">1 days ago</div>
+                            <p class="text">Dear students, kindly be informed that there will be no lessons on 5th and 6th April at the Academy due to the holiday.</p>
+                        </div>
+                        <div class="news-item">
+                            <h3 class="news-item-title">Programming Consultations</h3>
+                            <div class="date">3 days ago</div>
+                            <p class="text">This Sunday, March 26 at 1:00 pm the Academy will be holding programming consultations for first-year students.</p>
+                        </div>
+                        <div class="news-item">
+                            <h3 class="news-item-title">Meeting with ABC Bank</h3>
+                            <div class="date">20.03.2019</div>
+                            <p class="text">On Monday, March 27 at 7:00 pm, we invite you to a business meeting with ABC Bank.</p>
+                        </div>
+                        <div class="load-more">
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rewards-section">
+                        <h2>Rewards</h2>
+                        <div class="reward-item">
+                            <h3 class="reward-item-title">Class attended</h3>
+                            <div class="count">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>+1</span>
+                            </div>
+                            <div class="date">20.04.2019</div>
+                        </div>
+                        <div class="reward-item">
+                            <h3 class="reward-item-title">Class attended</h3>
+                            <div class="count">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>+1</span>
+                            </div>
+                            <div class="date">19.04.2019</div>
+                        </div>
+                        <div class="reward-item">
+                            <h3 class="reward-item-title">Class attended</h3>
+                            <div class="count">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>+1</span>
+                            </div>
+                            <div class="date">18.04.2019</div>
+                        </div>
+                        <div class="reward-item">
+                            <h3 class="reward-item-title">Class attended</h3>
+                            <div class="count">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>+1</span>
+                            </div>
+                            <div class="date">17.04.2019</div>
+                        </div>
+                        <div class="reward-item">
+                            <h3 class="reward-item-title">Class attended</h3>
+                            <div class="count">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>+1</span>
+                            </div>
+                            <div class="date">16.04.2019</div>
+                        </div>
+                        <div class="reward-item">
+                            <h3 class="reward-item-title">Class attended</h3>
+                            <div class="count">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>+1</span>
+                            </div>
+                            <div class="date">15.04.2019</div>
+                        </div>
+                        <div class="reward-item">
+                            <h3 class="reward-item-title">Class attended</h3>
+                            <div class="count">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>+1</span>
+                            </div>
+                            <div class="date">14.04.2019</div>
+                        </div>
+                        <div class="reward-item">
+                            <h3 class="reward-item-title">Class attended</h3>
+                            <div class="count">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>+1</span>
+                            </div>
+                            <div class="date">13.04.2019</div>
+                        </div>
+                        <div class="reward-item">
+                            <h3 class="reward-item-title">Class attended</h3>
+                            <div class="count">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>+1</span>
+                            </div>
+                            <div class="date">12.04.2019</div>
+                        </div>
+                        <div class="load-more">
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
