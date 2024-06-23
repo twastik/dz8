@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Diary - Homework</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .header .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .header .nav-links li {
+            margin-left: 20px;
+        }
+        .header .nav-links li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .homework-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .homework-section h2 {
+            margin-bottom: 10px;
+        }
+        .homework-item {
+            margin-bottom: 15px;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .homework-item h3 {
+            margin-bottom: 5px;
+        }
+        .homework-item .date {
+            font-size: 12px;
+            color: #6c757d;
+        }
+        .homework-item .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .homework-item .buttons button {
+            margin-right: 10px;
+        }
+        .homework-item .buttons button:last-child {
+            margin-right: 0;
+        }
+        .load-more {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .load-more a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Student Diary</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Homework</a></li>
+                <li><a href="#" class="settings"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="homework-section">
+                <h2>Homework</h2>
+                <div class="homework-item">
+                    <h3>Mathematics</h3>
+                    <div class="date">Due: 20.04.2019</div>
+                    <p>Complete exercises 1-5 from the textbook.</p>
+                    <div class="buttons">
+                        <button class="btn btn-primary">Upload</button>
+                        <button class="btn btn-secondary">Reupload</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+                <div class="homework-item">
+                    <h3>English</h3>
+                    <div class="date">Due: 19.04.2019</div>
+                    <p>Write a 500-word essay on the topic "My Favorite Book".</p>
+                    <div class="buttons">
+                        <button class="btn btn-primary">Upload</button>
+                        <button class="btn btn-secondary">Reupload</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+                <
